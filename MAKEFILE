@@ -1,0 +1,10 @@
+.DEFAULT_GOAL := build
+
+build:
+	wasm-pack build --target web
+
+serve:
+	npx http-server
+
+setup:
+	cargo install wasm-pack --no-default-features
